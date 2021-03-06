@@ -32,5 +32,5 @@ To reduce iteration time, I define hard symlinks from the Factorio mods folder t
 each mod. Example:
 
 ```
-mklink /J "C:\Users\yaria\AppData\Roaming\Factorio\mods\fire-armor
+mklink /J "C:\Users\yaria\AppData\Roaming\Factorio\mods\fire-armor" "D:\github\OwenDurni\factorio-modding\fire-armor_0.1.0"
 ```
