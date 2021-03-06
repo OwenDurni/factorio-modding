@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "factorio-modding",
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.wordWrapColumn": 100
+	}
+}
