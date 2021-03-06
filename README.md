@@ -18,6 +18,7 @@ machine. I make no claims this is the best dev environment.
 
 I have the following extensions installed:
 
+*   `github.vscode-pull-request-github` - Integration with github including authentication.
 *   `stkb.rewrap` - Automatically reflows text and comments to line length. (Alt+Q)
 *   `trixnz.vscode-lua` - IDE features for lua.
 
