@@ -14,7 +14,8 @@ data:extend({{
       count = 5,
       time = 10,
       ingredients = {
-          {"automation-science-pack", 1},
+          {'automation-science-pack', 1},
       },
   },
+  effects = {},
 }})
