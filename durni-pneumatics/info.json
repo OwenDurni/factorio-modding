@@ -1,0 +1,10 @@
+{
+    "name": "durni-pneumatics",
+    "version": "0.1.0",
+    "title": "Pneumatics",
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 1.1.26"],
+    "homepage": "https://github.com/OwenDurni/factorio-modding",
+    "author": "Yarias",
+    "description": "Rebalances early-game by introducing pneumatic technologies. Features earlier access to personal construction bots that fly using compressed air."
+}

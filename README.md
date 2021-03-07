@@ -3,6 +3,8 @@ Factorio mods and modding tools authored by Owen Durni.
 
 ## Mod list
 
+*  `durni-pneumatics` - (incomplete) Rebalances early-game by introducing pneumatic technologies.
+   Features earlier access to personal construction bots that fly using compressed air.
 *  `fire-armor` - This is just a copy of the [modding
    tutorial](https://wiki.factorio.com/Tutorial:Modding_tutorial/Gangsir) from the Factorio wiki.
 
