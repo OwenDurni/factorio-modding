@@ -7,7 +7,9 @@
 	],
 	"settings": {
 		"editor.wordWrapColumn": 100,
-		"lua.format.lineWidth": 100,
+		"lua.format.lineWidth": 99,
 		"lua.targetVersion": "5.2",
+		"files.insertFinalNewline": true,
+		"editor.formatOnSave": true,
 	}
 }

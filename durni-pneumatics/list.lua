@@ -4,9 +4,9 @@ local list = {}
 --  In the list `t` Return the table that contains an index `key` with the specified `value`. If no
 --  such table exists, returns `default`.
 function list.kvFind(t, key, value, default)
-  for _,x in ipairs(t) do
+  for _, x in ipairs(t) do
     if x[key] == value then
-        return x
+      return x
     end
   end
   return default
