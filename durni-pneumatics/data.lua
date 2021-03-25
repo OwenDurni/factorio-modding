@@ -10,6 +10,11 @@ local function tintPictures(pictures, tint)
     end
 end
 
+local kEmptySprite = {
+    filename = "__durni-pneumatics__/graphics/blank.png",
+    size = 1
+}
+
 data:extend(
     {
         {
@@ -73,9 +78,15 @@ local entity =
         -- collision boxes to prevent the majority of the clipping while still allowing the player
         -- to (mostly) walk over these pipes.
         collision_box = {{-0.078125, -0.078125}, {0.078125, 0.078125}},
+        -- vanilla heat pipe sprites were not designed for windows (part 1 of 1)
+        horizontal_window_bounding_box = {{0, 0}, {0, 0}},
+        vertical_window_bounding_box = {{0, 0}, {0, 0}},
         pictures = tables.copyUpdateAll(
             vPipeEntity.pictures,
             {
+                -- vanilla heat pipe sprites were not designed for windows (part 2 of 2)
+                horizontal_window_background = kEmptySprite,
+                vertical_window_background = kEmptySprite,
                 -- use the heat pipe graphics from vanilla (with a copper tint applied below)
                 straight_vertical_single = vHeatPipeSpritesCopy.single[1],
                 straight_vertical = vHeatPipeSpritesCopy.straight_vertical[1],
@@ -94,16 +105,7 @@ local entity =
                 ending_up = vHeatPipeSpritesCopy.ending_up[1],
                 ending_down = vHeatPipeSpritesCopy.ending_down[1],
                 ending_right = vHeatPipeSpritesCopy.ending_right[1],
-                ending_left = vHeatPipeSpritesCopy.ending_left[1],
-                -- vanilla heat pipe sprites were not designed for windows.
-                horizontal_window_background = {
-                    filename = "__durni-pneumatics__/graphics/blank.png",
-                    size = 1
-                },
-                vertical_window_background = {
-                    filename = "__durni-pneumatics__/graphics/blank.png",
-                    size = 1
-                }
+                ending_left = vHeatPipeSpritesCopy.ending_left[1]
             }
         )
     }
