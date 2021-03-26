@@ -1,8 +1,6 @@
-local tables = require "tables"
-
 local vPipeItem = data.raw["item"]["pipe"]
 local item =
-  tables.copyUpdateAll(
+  util.merge {
   vPipeItem,
   {
     name = "durni:compressed-air-pipe",
@@ -13,5 +11,5 @@ local item =
     subgroup = "energy-pipe-distribution",
     order = "a[pipe]z"
   }
-)
+}
 data:extend {item}
