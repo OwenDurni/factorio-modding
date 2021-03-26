@@ -17,6 +17,7 @@ local entity =
     -- collision boxes to prevent the majority of the clipping while still allowing the player
     -- to (mostly) walk over these pipes.
     collision_box = {{-0.078125, -0.078125}, {0.078125, 0.078125}},
+    icon = util.copy(vHeatPipeEntity.icon),
     pictures = {
       -- use the heat pipe graphics from vanilla (with a copper tint applied below)
       straight_vertical_single = vHeatPipeSpritesCopy.single[1],

@@ -12,10 +12,5 @@ local item =
     order = "b[fuilds]-a[offshore-pump]z"
   }
 }
-item.icons = {
-  {
-    icon = vItem.icon,
-    tint = todo.copperTint
-  }
-}
+todo.tintItem(item, todo.copperTint)
 data:extend {item}

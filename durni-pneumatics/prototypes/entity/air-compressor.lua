@@ -18,6 +18,7 @@ local entity =
     result_inventory_size = 0
   }
 }
+entity.next_upgrade = nil
 entity.fluid_boxes = {
   {
     production_type = "output",
@@ -28,10 +29,8 @@ entity.fluid_boxes = {
     pipe_connections = {{type = "output", position = {0, 2}}}
   }
 }
-entity.icons = {
-  {
-    icon = vFurnace.icon,
-    tint = todo.copperTint
-  }
-}
+entity.icon = util.copy(vFurnace.icon)
+entity.animation = util.copy(vFurnace.animation)
+todo.tintEntity(entity, todo.copperTint)
+
 data:extend {entity}
